@@ -1,0 +1,49 @@
+<html>
+<head>
+<header>FACE RECOGNITION WEB APP</header>
+
+<link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+</head>
+<body>
+   
+<div class="container"></div>
+<center>
+
+<b class = "name_of_objects"></b>
+<button id="dad">dad</button>
+<br>
+<br>
+<button id="mom">mom</button>
+<br>
+<br>
+<button id="sister">sister</button>
+<br>
+<br>
+</b>
+
+<h1>webcam</h1>
+<div id="camera"></div>
+<br>
+<div id="result"></div>
+<br>
+<br>
+<button  onclick="snapshot();" class="btn-btn-info">take image</button>
+<button  onclick="check();" class="btn-btn-success">identify image</button>
+<br>
+<br>
+<h1>family member name</h1>
+<div id="object_name"></div>
+<br>
+<h1>accuracy</h1>
+<div id="accuracy"></div>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
